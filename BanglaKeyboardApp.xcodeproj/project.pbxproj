@@ -7,14 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2A55801E76AE3A005B0AF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A557F1E76AE3A005B0AF2 /* libsqlite3.tbd */; };
+		1D2A55821E76AEE7005B0AF2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A55811E76AEE7005B0AF2 /* libicucore.tbd */; };
+		1D2A55831E76AEF5005B0AF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A557F1E76AE3A005B0AF2 /* libsqlite3.tbd */; };
+		1D2A55841E76AEFE005B0AF2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D2A55811E76AEE7005B0AF2 /* libicucore.tbd */; };
 		1D38AE841E5EF6E400649088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AE831E5EF6E400649088 /* AppDelegate.swift */; };
 		1D38AE861E5EF6E400649088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AE851E5EF6E400649088 /* ViewController.swift */; };
 		1D38AE891E5EF6E400649088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AE871E5EF6E400649088 /* Main.storyboard */; };
 		1D38AE8B1E5EF6E400649088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AE8A1E5EF6E400649088 /* Assets.xcassets */; };
 		1D38AE8E1E5EF6E400649088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AE8C1E5EF6E400649088 /* LaunchScreen.storyboard */; };
+		1D38AE9C1E5EF71B00649088 /* BanglaKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AE9B1E5EF71B00649088 /* BanglaKeyboardViewController.swift */; };
+		1D38AEA01E5EF71B00649088 /* BanglaKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D38AE991E5EF71B00649088 /* BanglaKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D38AEBD1E5EF80A00649088 /* Catboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEA61E5EF80A00649088 /* Catboard.swift */; };
+		1D38AEBE1E5EF80A00649088 /* CatboardBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEA71E5EF80A00649088 /* CatboardBanner.swift */; };
+		1D38AEBF1E5EF80A00649088 /* DefaultKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEA81E5EF80A00649088 /* DefaultKeyboard.swift */; };
+		1D38AEC01E5EF80A00649088 /* DefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEA91E5EF80A00649088 /* DefaultSettings.swift */; };
+		1D38AEC11E5EF80A00649088 /* DefaultSettings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEAA1E5EF80A00649088 /* DefaultSettings.xib */; };
+		1D38AEC21E5EF80A00649088 /* DirectionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEAB1E5EF80A00649088 /* DirectionEnum.swift */; };
+		1D38AEC31E5EF80A00649088 /* ExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEAC1E5EF80A00649088 /* ExtraView.swift */; };
+		1D38AEC41E5EF80A00649088 /* ForwardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEAD1E5EF80A00649088 /* ForwardingView.swift */; };
+		1D38AEC51E5EF80A00649088 /* ImageKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEAE1E5EF80A00649088 /* ImageKey.swift */; };
+		1D38AEC71E5EF80A00649088 /* KeyboardConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB01E5EF80A00649088 /* KeyboardConnector.swift */; };
+		1D38AEC81E5EF80A00649088 /* KeyboardInputTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB11E5EF80A00649088 /* KeyboardInputTraits.swift */; };
+		1D38AEC91E5EF80A00649088 /* KeyboardKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB21E5EF80A00649088 /* KeyboardKey.swift */; };
+		1D38AECA1E5EF80A00649088 /* KeyboardKeyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB31E5EF80A00649088 /* KeyboardKeyBackground.swift */; };
+		1D38AECB1E5EF80A00649088 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB41E5EF80A00649088 /* KeyboardLayout.swift */; };
+		1D38AECC1E5EF80A00649088 /* KeyboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB51E5EF80A00649088 /* KeyboardModel.swift */; };
+		1D38AECD1E5EF80A00649088 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB61E5EF80A00649088 /* KeyboardViewController.swift */; };
+		1D38AECE1E5EF80A00649088 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEB71E5EF80A00649088 /* Media.xcassets */; };
+		1D38AECF1E5EF80A00649088 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB81E5EF80A00649088 /* Shapes.swift */; };
+		1D38AED01E5EF80A00649088 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB91E5EF80A00649088 /* Utilities.swift */; };
+		1D38AED11E5EF80A00649088 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEBB1E5EF80A00649088 /* Info.plist */; };
+		1D38AEF11E5EF8CA00649088 /* AutoCorrect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AED41E5EF8CA00649088 /* AutoCorrect.m */; };
+		1D38AEF21E5EF8CA00649088 /* autodict.dct in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AED51E5EF8CA00649088 /* autodict.dct */; };
+		1D38AEF31E5EF8CA00649088 /* AvroKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AED71E5EF8CA00649088 /* AvroKeyboardController.m */; };
+		1D38AEF41E5EF8CA00649088 /* AvroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AED91E5EF8CA00649088 /* AvroParser.m */; };
+		1D38AEF51E5EF8CA00649088 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEDB1E5EF8CA00649088 /* CacheManager.m */; };
+		1D38AEF61E5EF8CA00649088 /* Candidates.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEDD1E5EF8CA00649088 /* Candidates.m */; };
+		1D38AEF71E5EF8CA00649088 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEDE1E5EF8CA00649088 /* data.json */; };
+		1D38AEF81E5EF8CA00649088 /* database.db3 in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEDF1E5EF8CA00649088 /* database.db3 */; };
+		1D38AEF91E5EF8CA00649088 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEE11E5EF8CA00649088 /* Database.m */; };
+		1D38AEFA1E5EF8CA00649088 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEE31E5EF8CA00649088 /* FMDatabase.m */; };
+		1D38AEFB1E5EF8CA00649088 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEE51E5EF8CA00649088 /* FMDatabasePool.m */; };
+		1D38AEFC1E5EF8CA00649088 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEE71E5EF8CA00649088 /* FMResultSet.m */; };
+		1D38AEFD1E5EF8CA00649088 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEE91E5EF8CA00649088 /* NSString+Levenshtein.m */; };
+		1D38AEFE1E5EF8CA00649088 /* regex.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEEA1E5EF8CA00649088 /* regex.json */; };
+		1D38AEFF1E5EF8CA00649088 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEEC1E5EF8CA00649088 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1D38AF001E5EF8CA00649088 /* RegexParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEEE1E5EF8CA00649088 /* RegexParser.m */; };
+		1D38AF011E5EF8CA00649088 /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEF01E5EF8CA00649088 /* Suggestion.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D38AE9E1E5EF71B00649088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D38AE781E5EF6E400649088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D38AE981E5EF71B00649088;
+			remoteInfo = BanglaKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D38AEA41E5EF71B00649088 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1D38AEA01E5EF71B00649088 /* BanglaKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D2A557F1E76AE3A005B0AF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1D2A55811E76AEE7005B0AF2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		1D38AE801E5EF6E400649088 /* BanglaKeyboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanglaKeyboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D38AE831E5EF6E400649088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D38AE851E5EF6E400649088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +91,61 @@
 		1D38AE8A1E5EF6E400649088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D38AE8D1E5EF6E400649088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D38AE8F1E5EF6E400649088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D38AE991E5EF71B00649088 /* BanglaKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BanglaKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D38AE9B1E5EF71B00649088 /* BanglaKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanglaKeyboardViewController.swift; sourceTree = "<group>"; };
+		1D38AE9D1E5EF71B00649088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D38AEA61E5EF80A00649088 /* Catboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catboard.swift; sourceTree = "<group>"; };
+		1D38AEA71E5EF80A00649088 /* CatboardBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatboardBanner.swift; sourceTree = "<group>"; };
+		1D38AEA81E5EF80A00649088 /* DefaultKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeyboard.swift; sourceTree = "<group>"; };
+		1D38AEA91E5EF80A00649088 /* DefaultSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSettings.swift; sourceTree = "<group>"; };
+		1D38AEAA1E5EF80A00649088 /* DefaultSettings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSettings.xib; sourceTree = "<group>"; };
+		1D38AEAB1E5EF80A00649088 /* DirectionEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionEnum.swift; sourceTree = "<group>"; };
+		1D38AEAC1E5EF80A00649088 /* ExtraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraView.swift; sourceTree = "<group>"; };
+		1D38AEAD1E5EF80A00649088 /* ForwardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForwardingView.swift; sourceTree = "<group>"; };
+		1D38AEAE1E5EF80A00649088 /* ImageKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKey.swift; sourceTree = "<group>"; };
+		1D38AEB01E5EF80A00649088 /* KeyboardConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardConnector.swift; sourceTree = "<group>"; };
+		1D38AEB11E5EF80A00649088 /* KeyboardInputTraits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInputTraits.swift; sourceTree = "<group>"; };
+		1D38AEB21E5EF80A00649088 /* KeyboardKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKey.swift; sourceTree = "<group>"; };
+		1D38AEB31E5EF80A00649088 /* KeyboardKeyBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardKeyBackground.swift; sourceTree = "<group>"; };
+		1D38AEB41E5EF80A00649088 /* KeyboardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
+		1D38AEB51E5EF80A00649088 /* KeyboardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardModel.swift; sourceTree = "<group>"; };
+		1D38AEB61E5EF80A00649088 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		1D38AEB71E5EF80A00649088 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1D38AEB81E5EF80A00649088 /* Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		1D38AEB91E5EF80A00649088 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1D38AEBB1E5EF80A00649088 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D38AEBC1E5EF80A00649088 /* KeyboardFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardFramework.h; sourceTree = "<group>"; };
+		1D38AED21E5EF8CA00649088 /* BanglaKeyboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BanglaKeyboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D38AED31E5EF8CA00649088 /* AutoCorrect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCorrect.h; sourceTree = "<group>"; };
+		1D38AED41E5EF8CA00649088 /* AutoCorrect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCorrect.m; sourceTree = "<group>"; };
+		1D38AED51E5EF8CA00649088 /* autodict.dct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = autodict.dct; sourceTree = "<group>"; };
+		1D38AED61E5EF8CA00649088 /* AvroKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvroKeyboardController.h; sourceTree = "<group>"; };
+		1D38AED71E5EF8CA00649088 /* AvroKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvroKeyboardController.m; sourceTree = "<group>"; };
+		1D38AED81E5EF8CA00649088 /* AvroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvroParser.h; sourceTree = "<group>"; };
+		1D38AED91E5EF8CA00649088 /* AvroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvroParser.m; sourceTree = "<group>"; };
+		1D38AEDA1E5EF8CA00649088 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		1D38AEDB1E5EF8CA00649088 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		1D38AEDC1E5EF8CA00649088 /* Candidates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candidates.h; sourceTree = "<group>"; };
+		1D38AEDD1E5EF8CA00649088 /* Candidates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candidates.m; sourceTree = "<group>"; };
+		1D38AEDE1E5EF8CA00649088 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		1D38AEDF1E5EF8CA00649088 /* database.db3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.db3; sourceTree = "<group>"; };
+		1D38AEE01E5EF8CA00649088 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		1D38AEE11E5EF8CA00649088 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		1D38AEE21E5EF8CA00649088 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1D38AEE31E5EF8CA00649088 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1D38AEE41E5EF8CA00649088 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1D38AEE51E5EF8CA00649088 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1D38AEE61E5EF8CA00649088 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1D38AEE71E5EF8CA00649088 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1D38AEE81E5EF8CA00649088 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Levenshtein.h"; sourceTree = "<group>"; };
+		1D38AEE91E5EF8CA00649088 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Levenshtein.m"; sourceTree = "<group>"; };
+		1D38AEEA1E5EF8CA00649088 /* regex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = regex.json; sourceTree = "<group>"; };
+		1D38AEEB1E5EF8CA00649088 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		1D38AEEC1E5EF8CA00649088 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		1D38AEED1E5EF8CA00649088 /* RegexParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexParser.h; sourceTree = "<group>"; };
+		1D38AEEE1E5EF8CA00649088 /* RegexParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexParser.m; sourceTree = "<group>"; };
+		1D38AEEF1E5EF8CA00649088 /* Suggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suggestion.h; sourceTree = "<group>"; };
+		1D38AEF01E5EF8CA00649088 /* Suggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suggestion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +153,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D2A55831E76AEF5005B0AF2 /* libsqlite3.tbd in Frameworks */,
+				1D2A55821E76AEE7005B0AF2 /* libicucore.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D38AE961E5EF71B00649088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2A55841E76AEFE005B0AF2 /* libicucore.tbd in Frameworks */,
+				1D2A55801E76AE3A005B0AF2 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2A557E1E76AE3A005B0AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D2A55811E76AEE7005B0AF2 /* libicucore.tbd */,
+				1D2A557F1E76AE3A005B0AF2 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1D38AE771E5EF6E400649088 = {
 			isa = PBXGroup;
 			children = (
 				1D38AE821E5EF6E400649088 /* BanglaKeyboardApp */,
+				1D38AE9A1E5EF71B00649088 /* BanglaKeyboard */,
 				1D38AE811E5EF6E400649088 /* Products */,
+				1D2A557E1E76AE3A005B0AF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				1D38AE801E5EF6E400649088 /* BanglaKeyboardApp.app */,
+				1D38AE991E5EF71B00649088 /* BanglaKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +211,91 @@
 			path = BanglaKeyboardApp;
 			sourceTree = "<group>";
 		};
+		1D38AE9A1E5EF71B00649088 /* BanglaKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1D38AED21E5EF8CA00649088 /* BanglaKeyboard-Bridging-Header.h */,
+				1D38AF021E5EF8D400649088 /* Avro */,
+				1D38AEA51E5EF80A00649088 /* Keyboard */,
+				1D38AEBA1E5EF80A00649088 /* KeyboardFramework */,
+				1D38AE9B1E5EF71B00649088 /* BanglaKeyboardViewController.swift */,
+				1D38AE9D1E5EF71B00649088 /* Info.plist */,
+			);
+			path = BanglaKeyboard;
+			sourceTree = "<group>";
+		};
+		1D38AEA51E5EF80A00649088 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1D38AEA61E5EF80A00649088 /* Catboard.swift */,
+				1D38AEA71E5EF80A00649088 /* CatboardBanner.swift */,
+				1D38AEA81E5EF80A00649088 /* DefaultKeyboard.swift */,
+				1D38AEA91E5EF80A00649088 /* DefaultSettings.swift */,
+				1D38AEAA1E5EF80A00649088 /* DefaultSettings.xib */,
+				1D38AEAB1E5EF80A00649088 /* DirectionEnum.swift */,
+				1D38AEAC1E5EF80A00649088 /* ExtraView.swift */,
+				1D38AEAD1E5EF80A00649088 /* ForwardingView.swift */,
+				1D38AEAE1E5EF80A00649088 /* ImageKey.swift */,
+				1D38AEB01E5EF80A00649088 /* KeyboardConnector.swift */,
+				1D38AEB11E5EF80A00649088 /* KeyboardInputTraits.swift */,
+				1D38AEB21E5EF80A00649088 /* KeyboardKey.swift */,
+				1D38AEB31E5EF80A00649088 /* KeyboardKeyBackground.swift */,
+				1D38AEB41E5EF80A00649088 /* KeyboardLayout.swift */,
+				1D38AEB51E5EF80A00649088 /* KeyboardModel.swift */,
+				1D38AEB61E5EF80A00649088 /* KeyboardViewController.swift */,
+				1D38AEB81E5EF80A00649088 /* Shapes.swift */,
+				1D38AEB91E5EF80A00649088 /* Utilities.swift */,
+				1D38AEB71E5EF80A00649088 /* Media.xcassets */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		1D38AEBA1E5EF80A00649088 /* KeyboardFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1D38AEBB1E5EF80A00649088 /* Info.plist */,
+				1D38AEBC1E5EF80A00649088 /* KeyboardFramework.h */,
+			);
+			path = KeyboardFramework;
+			sourceTree = "<group>";
+		};
+		1D38AF021E5EF8D400649088 /* Avro */ = {
+			isa = PBXGroup;
+			children = (
+				1D38AED31E5EF8CA00649088 /* AutoCorrect.h */,
+				1D38AED41E5EF8CA00649088 /* AutoCorrect.m */,
+				1D38AED51E5EF8CA00649088 /* autodict.dct */,
+				1D38AED61E5EF8CA00649088 /* AvroKeyboardController.h */,
+				1D38AED71E5EF8CA00649088 /* AvroKeyboardController.m */,
+				1D38AED81E5EF8CA00649088 /* AvroParser.h */,
+				1D38AED91E5EF8CA00649088 /* AvroParser.m */,
+				1D38AEDA1E5EF8CA00649088 /* CacheManager.h */,
+				1D38AEDB1E5EF8CA00649088 /* CacheManager.m */,
+				1D38AEDC1E5EF8CA00649088 /* Candidates.h */,
+				1D38AEDD1E5EF8CA00649088 /* Candidates.m */,
+				1D38AEDE1E5EF8CA00649088 /* data.json */,
+				1D38AEDF1E5EF8CA00649088 /* database.db3 */,
+				1D38AEE01E5EF8CA00649088 /* Database.h */,
+				1D38AEE11E5EF8CA00649088 /* Database.m */,
+				1D38AEE21E5EF8CA00649088 /* FMDatabase.h */,
+				1D38AEE31E5EF8CA00649088 /* FMDatabase.m */,
+				1D38AEE41E5EF8CA00649088 /* FMDatabasePool.h */,
+				1D38AEE51E5EF8CA00649088 /* FMDatabasePool.m */,
+				1D38AEE61E5EF8CA00649088 /* FMResultSet.h */,
+				1D38AEE71E5EF8CA00649088 /* FMResultSet.m */,
+				1D38AEE81E5EF8CA00649088 /* NSString+Levenshtein.h */,
+				1D38AEE91E5EF8CA00649088 /* NSString+Levenshtein.m */,
+				1D38AEEA1E5EF8CA00649088 /* regex.json */,
+				1D38AEEB1E5EF8CA00649088 /* RegexKitLite.h */,
+				1D38AEEC1E5EF8CA00649088 /* RegexKitLite.m */,
+				1D38AEED1E5EF8CA00649088 /* RegexParser.h */,
+				1D38AEEE1E5EF8CA00649088 /* RegexParser.m */,
+				1D38AEEF1E5EF8CA00649088 /* Suggestion.h */,
+				1D38AEF01E5EF8CA00649088 /* Suggestion.m */,
+			);
+			name = Avro;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +306,34 @@
 				1D38AE7C1E5EF6E400649088 /* Sources */,
 				1D38AE7D1E5EF6E400649088 /* Frameworks */,
 				1D38AE7E1E5EF6E400649088 /* Resources */,
+				1D38AEA41E5EF71B00649088 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1D38AE9F1E5EF71B00649088 /* PBXTargetDependency */,
 			);
 			name = BanglaKeyboardApp;
 			productName = BanglaKeyboardApp;
 			productReference = 1D38AE801E5EF6E400649088 /* BanglaKeyboardApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1D38AE981E5EF71B00649088 /* BanglaKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D38AEA11E5EF71B00649088 /* Build configuration list for PBXNativeTarget "BanglaKeyboard" */;
+			buildPhases = (
+				1D38AE951E5EF71B00649088 /* Sources */,
+				1D38AE961E5EF71B00649088 /* Frameworks */,
+				1D38AE971E5EF71B00649088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BanglaKeyboard;
+			productName = BanglaKeyboard;
+			productReference = 1D38AE991E5EF71B00649088 /* BanglaKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +348,12 @@
 					1D38AE7F1E5EF6E400649088 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = HP8Y56UEEV;
+						ProvisioningStyle = Automatic;
+					};
+					1D38AE981E5EF71B00649088 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HP8Y56UEEV;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +372,7 @@
 			projectRoot = "";
 			targets = (
 				1D38AE7F1E5EF6E400649088 /* BanglaKeyboardApp */,
+				1D38AE981E5EF71B00649088 /* BanglaKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +388,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1D38AE971E5EF71B00649088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D38AEF81E5EF8CA00649088 /* database.db3 in Resources */,
+				1D38AEF21E5EF8CA00649088 /* autodict.dct in Resources */,
+				1D38AEF71E5EF8CA00649088 /* data.json in Resources */,
+				1D38AED11E5EF80A00649088 /* Info.plist in Resources */,
+				1D38AEFE1E5EF8CA00649088 /* regex.json in Resources */,
+				1D38AECE1E5EF80A00649088 /* Media.xcassets in Resources */,
+				1D38AEC11E5EF80A00649088 /* DefaultSettings.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +414,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1D38AE951E5EF71B00649088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D38AEC01E5EF80A00649088 /* DefaultSettings.swift in Sources */,
+				1D38AEFF1E5EF8CA00649088 /* RegexKitLite.m in Sources */,
+				1D38AEBE1E5EF80A00649088 /* CatboardBanner.swift in Sources */,
+				1D38AECA1E5EF80A00649088 /* KeyboardKeyBackground.swift in Sources */,
+				1D38AEF11E5EF8CA00649088 /* AutoCorrect.m in Sources */,
+				1D38AEF51E5EF8CA00649088 /* CacheManager.m in Sources */,
+				1D38AEC71E5EF80A00649088 /* KeyboardConnector.swift in Sources */,
+				1D38AECB1E5EF80A00649088 /* KeyboardLayout.swift in Sources */,
+				1D38AECC1E5EF80A00649088 /* KeyboardModel.swift in Sources */,
+				1D38AEF61E5EF8CA00649088 /* Candidates.m in Sources */,
+				1D38AED01E5EF80A00649088 /* Utilities.swift in Sources */,
+				1D38AEF91E5EF8CA00649088 /* Database.m in Sources */,
+				1D38AECF1E5EF80A00649088 /* Shapes.swift in Sources */,
+				1D38AEC21E5EF80A00649088 /* DirectionEnum.swift in Sources */,
+				1D38AF011E5EF8CA00649088 /* Suggestion.m in Sources */,
+				1D38AEFA1E5EF8CA00649088 /* FMDatabase.m in Sources */,
+				1D38AECD1E5EF80A00649088 /* KeyboardViewController.swift in Sources */,
+				1D38AEFC1E5EF8CA00649088 /* FMResultSet.m in Sources */,
+				1D38AEFB1E5EF8CA00649088 /* FMDatabasePool.m in Sources */,
+				1D38AEFD1E5EF8CA00649088 /* NSString+Levenshtein.m in Sources */,
+				1D38AEC31E5EF80A00649088 /* ExtraView.swift in Sources */,
+				1D38AF001E5EF8CA00649088 /* RegexParser.m in Sources */,
+				1D38AEF41E5EF8CA00649088 /* AvroParser.m in Sources */,
+				1D38AEF31E5EF8CA00649088 /* AvroKeyboardController.m in Sources */,
+				1D38AEC51E5EF80A00649088 /* ImageKey.swift in Sources */,
+				1D38AE9C1E5EF71B00649088 /* BanglaKeyboardViewController.swift in Sources */,
+				1D38AEC81E5EF80A00649088 /* KeyboardInputTraits.swift in Sources */,
+				1D38AEC41E5EF80A00649088 /* ForwardingView.swift in Sources */,
+				1D38AEBF1E5EF80A00649088 /* DefaultKeyboard.swift in Sources */,
+				1D38AEC91E5EF80A00649088 /* KeyboardKey.swift in Sources */,
+				1D38AEBD1E5EF80A00649088 /* Catboard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D38AE9F1E5EF71B00649088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D38AE981E5EF71B00649088 /* BanglaKeyboard */;
+			targetProxy = 1D38AE9E1E5EF71B00649088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1D38AE871E5EF6E400649088 /* Main.storyboard */ = {
@@ -260,11 +578,14 @@
 		1D38AE931E5EF6E400649088 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HP8Y56UEEV;
 				INFOPLIST_FILE = BanglaKeyboardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.nibir.BanglaKeyboardApp;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -273,12 +594,48 @@
 		1D38AE941E5EF6E400649088 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HP8Y56UEEV;
 				INFOPLIST_FILE = BanglaKeyboardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.nibir.BanglaKeyboardApp;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1D38AEA21E5EF71B00649088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HP8Y56UEEV;
+				INFOPLIST_FILE = BanglaKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp.BanglaKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BanglaKeyboard/BanglaKeyboard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1D38AEA31E5EF71B00649088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = HP8Y56UEEV;
+				INFOPLIST_FILE = BanglaKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp.BanglaKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BanglaKeyboard/BanglaKeyboard-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +659,16 @@
 				1D38AE941E5EF6E400649088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D38AEA11E5EF71B00649088 /* Build configuration list for PBXNativeTarget "BanglaKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D38AEA21E5EF71B00649088 /* Debug */,
+				1D38AEA31E5EF71B00649088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
