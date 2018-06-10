@@ -198,9 +198,10 @@
 }
 
 - (void)deleteBackward:(id)sender {
-    // We're called only when [compositionBuffer length] > 0
-    [_composedBuffer deleteCharactersInRange:NSMakeRange([_composedBuffer length] - 1, 1)];
-    [self findCurrentCandidates];
+	if (_composedBuffer.length) {
+    	[_composedBuffer deleteCharactersInRange:NSMakeRange([_composedBuffer length] - 1, 1)];
+    	[self findCurrentCandidates];
+	}
     ////[self updateComposition];
     //[self updateCandidatesPanel];
 }

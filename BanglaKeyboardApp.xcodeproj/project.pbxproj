@@ -55,6 +55,7 @@
 		1D38AEFF1E5EF8CA00649088 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEEC1E5EF8CA00649088 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1D38AF001E5EF8CA00649088 /* RegexParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEEE1E5EF8CA00649088 /* RegexParser.m */; };
 		1D38AF011E5EF8CA00649088 /* Suggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEF01E5EF8CA00649088 /* Suggestion.m */; };
+		1DB111DA20CB0B4800FBF0D0 /* SuggestionsBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB111D920CB0B4800FBF0D0 /* SuggestionsBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,7 @@
 		1D38AEEE1E5EF8CA00649088 /* RegexParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexParser.m; sourceTree = "<group>"; };
 		1D38AEEF1E5EF8CA00649088 /* Suggestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Suggestion.h; sourceTree = "<group>"; };
 		1D38AEF01E5EF8CA00649088 /* Suggestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Suggestion.m; sourceTree = "<group>"; };
+		1DB111D920CB0B4800FBF0D0 /* SuggestionsBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				1D38AEA51E5EF80A00649088 /* Keyboard */,
 				1D38AEBA1E5EF80A00649088 /* KeyboardFramework */,
 				1D38AE9B1E5EF71B00649088 /* BanglaKeyboardViewController.swift */,
+				1DB111D920CB0B4800FBF0D0 /* SuggestionsBanner.swift */,
 				1D38AE9D1E5EF71B00649088 /* Info.plist */,
 			);
 			path = BanglaKeyboard;
@@ -347,12 +350,12 @@
 				TargetAttributes = {
 					1D38AE7F1E5EF6E400649088 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HP8Y56UEEV;
+						DevelopmentTeam = 3K8FQ65Z34;
 						ProvisioningStyle = Automatic;
 					};
 					1D38AE981E5EF71B00649088 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = HP8Y56UEEV;
+						DevelopmentTeam = 3K8FQ65Z34;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -421,6 +424,7 @@
 				1D38AEC01E5EF80A00649088 /* DefaultSettings.swift in Sources */,
 				1D38AEFF1E5EF8CA00649088 /* RegexKitLite.m in Sources */,
 				1D38AEBE1E5EF80A00649088 /* CatboardBanner.swift in Sources */,
+				1DB111DA20CB0B4800FBF0D0 /* SuggestionsBanner.swift in Sources */,
 				1D38AECA1E5EF80A00649088 /* KeyboardKeyBackground.swift in Sources */,
 				1D38AEF11E5EF8CA00649088 /* AutoCorrect.m in Sources */,
 				1D38AEF51E5EF8CA00649088 /* CacheManager.m in Sources */,
@@ -522,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -566,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -580,12 +584,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HP8Y56UEEV;
+				DEVELOPMENT_TEAM = 3K8FQ65Z34;
 				INFOPLIST_FILE = BanglaKeyboardApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp;
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -596,12 +600,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = HP8Y56UEEV;
+				DEVELOPMENT_TEAM = 3K8FQ65Z34;
 				INFOPLIST_FILE = BanglaKeyboardApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp;
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -611,11 +615,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = HP8Y56UEEV;
+				DEVELOPMENT_TEAM = 3K8FQ65Z34;
 				INFOPLIST_FILE = BanglaKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp.BanglaKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp.BanglaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BanglaKeyboard/BanglaKeyboard-Bridging-Header.h";
@@ -628,11 +632,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = HP8Y56UEEV;
+				DEVELOPMENT_TEAM = 3K8FQ65Z34;
 				INFOPLIST_FILE = BanglaKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BanglaKeyboardApp.BanglaKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp.BanglaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BanglaKeyboard/BanglaKeyboard-Bridging-Header.h";
