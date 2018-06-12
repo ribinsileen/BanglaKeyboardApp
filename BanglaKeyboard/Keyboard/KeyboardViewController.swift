@@ -95,9 +95,9 @@ class KeyboardViewController: UIInputViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         UserDefaults.standard.register(defaults: [
-            kAutoCapitalization: true,
-            kPeriodShortcut: true,
-            kKeyboardClicks: false,
+            kAutoCapitalization: false,
+            kPeriodShortcut: false,
+            kKeyboardClicks: true,
             kSmallLowercase: false
         ])
         

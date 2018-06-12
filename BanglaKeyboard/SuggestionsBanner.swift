@@ -10,21 +10,24 @@ import UIKit
 
 class SuggestionsBanner: ExtraView {
 	weak var keyboardViewController: BanglaKeyboardViewController?
+	override var darkMode: Bool {
+		didSet {
+			updateAppearance()
+		}
+	}
 	var leftButton = UIButton(type: UIButtonType.system)
 	var middleButton = UIButton(type: .system)
 	var rightButton = UIButton(type: .system)
-
+	
 	required init(globalColors: GlobalColors.Type?, darkMode: Bool, solidColorMode: Bool) {
 		super.init(globalColors: globalColors, darkMode: darkMode, solidColorMode: solidColorMode)
 		addSubview(leftButton)
 		addSubview(middleButton)
 		addSubview(rightButton)
-		leftButton.tintColor = .white
-		leftButton.backgroundColor = GlobalColors.lightModeSolidColorSpecialKey
-		middleButton.tintColor = .white
-		middleButton.backgroundColor = GlobalColors.lightModeSolidColorSpecialKey
-		rightButton.tintColor = .white
-		rightButton.backgroundColor = GlobalColors.lightModeSolidColorSpecialKey
+		updateAppearance()
+		leftButton.addTarget(self, action: #selector(didPress(_:)), for: .touchUpInside)
+		middleButton.addTarget(self, action: #selector(didPress(_:)), for: .touchUpInside)
+		rightButton.addTarget(self, action: #selector(didPress(_:)), for: .touchUpInside)
 		updateSuggestions(array: [])
 	}
 	
@@ -34,6 +37,25 @@ class SuggestionsBanner: ExtraView {
 	
 	override func setNeedsLayout() {
 		super.setNeedsLayout()
+	}
+	
+	func updateAppearance() {
+		if darkMode {
+			leftButton.tintColor = .white
+			leftButton.backgroundColor = GlobalColors.darkModeSpecialKey
+			middleButton.tintColor = .white
+			middleButton.backgroundColor = GlobalColors.darkModeSpecialKey
+			rightButton.tintColor = .white
+			rightButton.backgroundColor = GlobalColors.darkModeSpecialKey
+		}
+		else {
+			leftButton.tintColor = .white
+			leftButton.backgroundColor = GlobalColors.lightModeSolidColorSpecialKey
+			middleButton.tintColor = .white
+			middleButton.backgroundColor = GlobalColors.lightModeSolidColorSpecialKey
+			rightButton.tintColor = .white
+			rightButton.backgroundColor = GlobalColors.lightModeSolidColorSpecialKey
+		}
 	}
 	
 	override func layoutSubviews() {
@@ -52,31 +74,40 @@ class SuggestionsBanner: ExtraView {
 	func updateSuggestions(array: [String]) {
 		switch array.count {
 		case 0:
-			leftButton.isHidden = true
-			middleButton.isHidden = true
-			rightButton.isHidden = true
+			leftButton.setTitle("", for: .normal)
+			leftButton.isEnabled = false
+			middleButton.setTitle("", for: .normal)
+			middleButton.isEnabled = false
+			rightButton.setTitle("", for: .normal)
+			rightButton.isEnabled = false
 		case 1:
-			leftButton.isHidden = true
-			middleButton.isHidden = false
+			leftButton.setTitle("", for: .normal)
+			leftButton.isEnabled = false
 			middleButton.setTitle(array[0], for: .normal)
-			rightButton.isHidden = true
+			middleButton.isEnabled = true
+			rightButton.setTitle("", for: .normal)
+			rightButton.isEnabled = false
 		case 2:
-			leftButton.isHidden = true
-			middleButton.isHidden = false
+			leftButton.setTitle("", for: .normal)
+			leftButton.isEnabled = false
 			middleButton.setTitle(array[0], for: .normal)
-			rightButton.isHidden = false
+			middleButton.isEnabled = true
 			rightButton.setTitle(array[1], for: .normal)
+			rightButton.isEnabled = true
 		default:
-			leftButton.isHidden = false
 			leftButton.setTitle(array[0], for: .normal)
-			middleButton.isHidden = false
+			leftButton.isEnabled = true
 			middleButton.setTitle(array[0], for: .normal)
-			rightButton.isHidden = false
+			middleButton.isEnabled = true
 			rightButton.setTitle(array[1], for: .normal)
+			rightButton.isEnabled = true
 		}
 	}
 	
 	func didPress(_ sender: UIButton) {
-		keyboardViewController?.keyPressed(<#T##key: Key##Key#>)
+		if let suggestion = sender.titleLabel?.text {
+			keyboardViewController?.insert(suggestion: suggestion)
+			updateSuggestions(array: [])
+		}
 	}
 }

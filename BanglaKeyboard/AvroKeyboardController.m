@@ -39,7 +39,8 @@
         _currentCandidates = [[NSMutableArray alloc] initWithCapacity:0];
         _prevSelected = -1;
     }
-    
+	[[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"IncludeDictionary"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
     return self;
 }
 

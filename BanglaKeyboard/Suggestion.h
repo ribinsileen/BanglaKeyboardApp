@@ -13,6 +13,7 @@
 
 + (Suggestion *)sharedInstance;
 
+- (void)clearSuggestions;
 - (NSMutableArray*)getList:(NSString*)term;
 - (BOOL)isKar:(NSString*)letter;
 - (BOOL)isVowel:(NSString*)letter;

@@ -24,7 +24,7 @@ class BanglaKeyboardViewController: KeyboardViewController {
     }
 	
 	override func createBanner() -> ExtraView? {
-		let banner = SuggestionsBanner(globalColors: type(of: self).globalColors, darkMode: false, solidColorMode: self.solidColorMode())
+		let banner = SuggestionsBanner(globalColors: type(of: self).globalColors, darkMode: darkMode(), solidColorMode: self.solidColorMode())
 		banner.keyboardViewController = self
 		return banner
 	}
@@ -40,30 +40,46 @@ class BanglaKeyboardViewController: KeyboardViewController {
 	override func backspaceDown(_ sender: KeyboardKey) {
 		super.backspaceDown(sender)
 		BanglaKeyboardViewController.avro.deleteBackward(self)
+		(bannerView as! SuggestionsBanner).updateSuggestions(array: BanglaKeyboardViewController.avro.currentCandidates as! [String])
+		BanglaKeyboardViewController.currentCount > 0 ? (BanglaKeyboardViewController.currentCount -= 1) : (BanglaKeyboardViewController.currentCount = 0)
 	}
 	
 	fileprivate func resetAvro() {
 		BanglaKeyboardViewController.avro.composedBuffer = ""
 		BanglaKeyboardViewController.avro.currentCandidates = NSMutableArray()
 		BanglaKeyboardViewController.currentCount = 0
+		Suggestion.sharedInstance().clearSuggestions()
+	}
+	
+	fileprivate func commitWord(_ word: String) {
+		for _ in 0...BanglaKeyboardViewController.currentCount - 1 {
+			textDocumentProxy.deleteBackward()
+		}
+		textDocumentProxy.insertText(word)
+		resetAvro()
 	}
 	
 	override func keyPressed(_ key: Key) {
-		//handle return later
-		if key.type == .space {
+		if key.type == .space || key.type == .return {
+			var suffix: Character = " "
+			switch key.type {
+			case .space:
+				suffix = " "
+			case .return:
+				suffix = "\n"
+			default:
+				//nope
+				break
+			}
 			let textDocumentProxy = self.textDocumentProxy
-			if textDocumentProxy.documentContextBeforeInput?.last == " " {
-				textDocumentProxy.insertText(" ")
+			if textDocumentProxy.documentContextBeforeInput?.last == suffix || BanglaKeyboardViewController.avro.currentCandidates.count == 0 {
+				textDocumentProxy.insertText("\(suffix)")
 			}
 			else {
 				let replacementWord = BanglaKeyboardViewController.avro.currentCandidates[0] as? String
-				for _ in 0...BanglaKeyboardViewController.currentCount {
-					textDocumentProxy.deleteBackward()
-				}
 				if let replacementWord = replacementWord {
-					textDocumentProxy.insertText(replacementWord + " ")
+					commitWord(replacementWord + "\(suffix)")
 				}
-				resetAvro()
 			}
 		}
 		if key.type == .character || key.type == .period || key.type == .specialCharacter {
@@ -74,8 +90,7 @@ class BanglaKeyboardViewController: KeyboardViewController {
 		}
 		(bannerView as! SuggestionsBanner).updateSuggestions(array: BanglaKeyboardViewController.avro.currentCandidates as! [String])
     }
-	
 	func insert(suggestion: String) {
-		textDocumentProxy.insertText(suggestion)
+		commitWord(suggestion + " ")
 	}
 }
