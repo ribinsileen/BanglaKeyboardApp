@@ -17,7 +17,7 @@ class ForwardingView: UIView {
         
         super.init(frame: frame)
         
-        self.contentMode = UIViewContentMode.redraw
+        self.contentMode = UIView.ContentMode.redraw
         self.isMultipleTouchEnabled = true
         self.isUserInteractionEnabled = true
         self.isOpaque = false
@@ -42,7 +42,7 @@ class ForwardingView: UIView {
         }
     }
     
-    func handleControl(_ view: UIView?, controlEvent: UIControlEvents) {
+    func handleControl(_ view: UIView?, controlEvent: UIControl.Event) {
         if let control = view as? UIControl {
             let targets = control.allTargets
             for target in targets {

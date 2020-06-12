@@ -15,7 +15,7 @@ class SuggestionsBanner: ExtraView {
 			updateAppearance()
 		}
 	}
-	var leftButton = UIButton(type: UIButtonType.system)
+    var leftButton = UIButton(type: UIButton.ButtonType.system)
 	var middleButton = UIButton(type: .system)
 	var rightButton = UIButton(type: .system)
 	
@@ -104,7 +104,7 @@ class SuggestionsBanner: ExtraView {
 		}
 	}
 	
-	func didPress(_ sender: UIButton) {
+    @objc func didPress(_ sender: UIButton) {
 		if let suggestion = sender.titleLabel?.text {
 			keyboardViewController?.insert(suggestion: suggestion)
 			updateSuggestions(array: [])

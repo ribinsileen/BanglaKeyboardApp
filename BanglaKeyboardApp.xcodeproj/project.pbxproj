@@ -37,7 +37,6 @@
 		1D38AECE1E5EF80A00649088 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEB71E5EF80A00649088 /* Media.xcassets */; };
 		1D38AECF1E5EF80A00649088 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB81E5EF80A00649088 /* Shapes.swift */; };
 		1D38AED01E5EF80A00649088 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AEB91E5EF80A00649088 /* Utilities.swift */; };
-		1D38AED11E5EF80A00649088 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AEBB1E5EF80A00649088 /* Info.plist */; };
 		1D38AEF11E5EF8CA00649088 /* AutoCorrect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AED41E5EF8CA00649088 /* AutoCorrect.m */; };
 		1D38AEF21E5EF8CA00649088 /* autodict.dct in Resources */ = {isa = PBXBuildFile; fileRef = 1D38AED51E5EF8CA00649088 /* autodict.dct */; };
 		1D38AEF31E5EF8CA00649088 /* AvroKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D38AED71E5EF8CA00649088 /* AvroKeyboardController.m */; };
@@ -366,6 +365,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -398,7 +398,6 @@
 				1D38AEF81E5EF8CA00649088 /* database.db3 in Resources */,
 				1D38AEF21E5EF8CA00649088 /* autodict.dct in Resources */,
 				1D38AEF71E5EF8CA00649088 /* data.json in Resources */,
-				1D38AED11E5EF80A00649088 /* Info.plist in Resources */,
 				1D38AEFE1E5EF8CA00649088 /* regex.json in Resources */,
 				1D38AECE1E5EF80A00649088 /* Media.xcassets in Resources */,
 				1D38AEC11E5EF80A00649088 /* DefaultSettings.xib in Resources */,
@@ -589,9 +588,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nibir.BKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -605,9 +604,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nibir.BKApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -619,12 +618,12 @@
 				INFOPLIST_FILE = BanglaKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp.BanglaKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nibir.BKApp.BanglaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BanglaKeyboard/BanglaKeyboard-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -636,11 +635,11 @@
 				INFOPLIST_FILE = BanglaKeyboard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = info.nibir.BKApp.BanglaKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.nibir.BKApp.BanglaKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "BanglaKeyboard/BanglaKeyboard-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
